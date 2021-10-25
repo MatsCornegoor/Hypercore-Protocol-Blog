@@ -4,19 +4,19 @@ Simple markdown blog compatible with Hyper Protocol
 
 ## Folder structure
 
-Index
-    index.html
-    function.js
+    Index
+        index.html
+        function.js
 
-    Meeuwis - mount
-        Posts.txt
-        Files
-    Mats - mount
-        Posts.txt
-        Files
-    Emma - mount
-        Posts.txt
-        Files
+        Meeuwis - mount
+            Posts.txt
+            Files
+        Mats - mount
+            Posts.txt
+            Files
+        Emma - mount
+            Posts.txt
+            Files
 
 
 ## post.txt structure
