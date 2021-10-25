@@ -1,0 +1,33 @@
+__ Folder structure __
+
+Index
+    index.html
+    function.js
+
+    Meeuwis - mount
+        Posts.txt
+        Files
+    Mats - mount
+        Posts.txt
+        Files
+    Emma - mount
+        Posts.txt
+        Files
+
+
+__ post.txt structure __
+
+Date, Catagory, Title, Link
+22-10-21, Flowers, Flower seeds, hyper://f7c91c19519a6fb35b733f34fb3f9352eb3a774a94decd455621efc1d8cd1441/
+23-10-21, Flowers, Flower smells, hyper://f7c91c19519a6fb35b733f34fb3f9352eb3a774a94decd455621efc1d8cd1441/
+24-10-21, Tree, Tree leaves, hyper://f7c91c19519a6fb35b733f34fb3f9352eb3a774a94decd455621efc1d8cd1441/
+
+
+
+__ Hyper CLI __
+
+hyp sync ./input-folder hyper://1234…af --watch
+hyp sync {source} [target]
+hyp seed hyper://1234…af
+hyp sync hyper://f7c91c19519a6fb35b733f34fb3f9352eb3a774a94decd455621efc1d8cd1441/ hyperdrive --watch
+
