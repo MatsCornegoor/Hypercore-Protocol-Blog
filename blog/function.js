@@ -90,7 +90,7 @@ function buildPage(){
                         content.innerHTML = conv.makeHtml(reader.result);
 
                         let close = document.createElement("h4");
-                        close.textContent = "x";
+                        close.textContent = "close";
                         close.classList.add("close");
                         content.append(close);
 
