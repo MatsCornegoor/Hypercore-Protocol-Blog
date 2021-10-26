@@ -1,20 +1,32 @@
 @font-face {
-    font-family: 'happy-times';
+    font-family: 'happy-times-bold';
     src: url("fonts/happy-times-NG_bold_master_web.woff") format('woff');
 }
 @font-face {
-    font-family: 'happy-times';
-    src: url("fonts/happy-times-NG_bold_master_web.woff") format('woff');
+    font-family: 'happy-times-regular';
+    src: url("fonts/happy-times-NG_master_web.woff") format('woff');
 }
 
 h1 {
-  font-family:'happy-times', Times, serif ;
+  font-family:'happy-times-bold', Times, serif ;
   font-size:30pt;
   color: #000000;
 }
 
 h2 {
-  font-family:'happy-times', Times, serif ;
-  font-size:15pt;
+  font-family:'happy-times-bold', Times, serif ;
+  font-size:20pt;
   color: #000000;
 }
+
+h3 {
+  font-family:'happy-times-bold', Times, serif ;
+  font-size:13pt;
+  color: #000000;
+}
+p {
+  font-family:'happy-times-regular', Times, serif ;
+  font-size:13pt;
+  color: #000000;
+}    
+
