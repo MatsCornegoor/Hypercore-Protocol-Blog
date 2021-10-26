@@ -31,7 +31,9 @@ p {
 }    
 .heading {
   width: 100%;
-  padding: 10px;
-  border-bottom: 2px solid #000000;
+  padding: 5%;
 }   
+hr.solid {
+  border-top: 3px solid #bbb;
+}
  
