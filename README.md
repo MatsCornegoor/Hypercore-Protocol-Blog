@@ -15,9 +15,9 @@ This file is fetched from the function.js file and used to fetch the blog posts.
 
 The post.txt file uses following structure: Date, Catagory, Title, Link  
 
-22-10-21, Flowers, Flower seeds, mats/test.md  
-23-10-21, Flowers, Flower smells, meeuwis/test.md  
-24-10-21, Tree, Tree leaves, mats/test.md  
+22-10-21, Flowers, Flower seeds, user1/test.md  
+23-10-21, Flowers, Flower smells, user2/test.md  
+24-10-21, Tree, Tree leaves, user1/test2.md  
 
 
 ## Folder structure
@@ -26,13 +26,13 @@ The post.txt file uses following structure: Date, Catagory, Title, Link
         index.html
         function.js
 
-        User 1 - mount
+        user1 - mount
             post.txt
             Files
-        User 2 - mount
+        user2 - mount
             post.txt
             Files
-        User 3 - mount
+        user3 - mount
             post.txt
             Files
 
