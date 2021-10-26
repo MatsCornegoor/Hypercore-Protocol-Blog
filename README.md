@@ -8,23 +8,24 @@ Simple markdown blog compatible with Hyper Protocol
         index.html
         function.js
 
-        Meeuwis - mount
-            Posts.txt
+        User 1 - mount
+            post.txt
             Files
-        Mats - mount
-            Posts.txt
+        User 2 - mount
+            post.txt
             Files
-        Emma - mount
-            Posts.txt
+        User 3 - mount
+            post.txt
             Files
 
 
 ## post.txt structure
 
-Date, Catagory, Title, Link
-22-10-21, Flowers, Flower seeds, mats/test.md
-23-10-21, Flowers, Flower smells, meeuwis/test.md
-24-10-21, Tree, Tree leaves, mats/test.md
+Date, Catagory, Title, Link  
+
+22-10-21, Flowers, Flower seeds, mats/test.md  
+23-10-21, Flowers, Flower smells, meeuwis/test.md  
+24-10-21, Tree, Tree leaves, mats/test.md  
 
 
 
