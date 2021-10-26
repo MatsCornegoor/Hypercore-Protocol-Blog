@@ -1,6 +1,6 @@
 # Hyper-Protocol-Blog
 
-Simple markdown blog compatible with Hyper Protocol
+Simple markdown blog compatible with Hyper Protocol test
 
 ## Folder structure
 
