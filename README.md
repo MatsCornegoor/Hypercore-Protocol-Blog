@@ -1,6 +1,24 @@
 # Hyper-Protocol-Blog
 
-Simple markdown blog compatible with Hyper Protocol test
+This is a simple decentralized collaborative markdown blog that is compatible with the Hyper Protocol network.
+We are using the mount function of hyperdrive to create a P2P file sharing system and showdown.js to convert markdown files into blog posts.
+
+## View the blog
+
+The easiest way to view the blog is using beaker browser by visiting the following url: hyper://cab491db39be39c0542c611f60b12eabe689efbf2fd0210e280d73507137e0dd/
+
+## post.txt structure
+
+We are using text files to create a simple content management system.
+Each user of the file sharing system has its own folder with post.txt file.
+This file is fetched from the function.js file and used to fetch the blog posts.
+
+The post.txt file uses following structure: Date, Catagory, Title, Link  
+
+22-10-21, Flowers, Flower seeds, mats/test.md  
+23-10-21, Flowers, Flower smells, meeuwis/test.md  
+24-10-21, Tree, Tree leaves, mats/test.md  
+
 
 ## Folder structure
 
@@ -18,20 +36,10 @@ Simple markdown blog compatible with Hyper Protocol test
             post.txt
             Files
 
+## Support the blog
 
-## post.txt structure
+You can support the blog by running a server with Hyper CLI.
+Run the following command to become a seeder: 
 
-Date, Catagory, Title, Link  
+`hyp seed hyper://cab491db39be39c0542c611f60b12eabe689efbf2fd0210e280d73507137e0dd/`
 
-22-10-21, Flowers, Flower seeds, mats/test.md  
-23-10-21, Flowers, Flower smells, meeuwis/test.md  
-24-10-21, Tree, Tree leaves, mats/test.md  
-
-
-
-## Hyper CLI
-
-hyp sync ./input-folder hyper://1234…af --watch
-hyp sync {source} [target]
-hyp seed hyper://1234…af
-hyp sync hyper://f7c91c19519a6fb35b733f34fb3f9352eb3a774a94decd455621efc1d8cd1441/ hyperdrive --watch
