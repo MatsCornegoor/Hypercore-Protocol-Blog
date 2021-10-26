@@ -2,6 +2,10 @@
     font-family: 'happy-times';
     src: url("fonts/happy-times-NG_bold_master_web.woff") format('woff');
 }
+@font-face {
+    font-family: 'happy-times';
+    src: url("fonts/happy-times-NG_bold_master_web.woff") format('woff');
+}
 
 h1 {
   font-family:'happy-times', Times, serif ;
