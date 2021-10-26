@@ -29,4 +29,7 @@ p {
   font-size:13pt;
   color: #000000;
 }    
-
+.heading {
+  width: 100%;
+  heigt: 50px;
+  border-bottom: 2px;
