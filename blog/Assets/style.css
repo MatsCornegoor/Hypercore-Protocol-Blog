@@ -4,7 +4,13 @@
 }
 
 h1 {
-  font-family:'happy-times', Courier, monospace ;
+  font-family:'happy-times', Times, serif ;
+  font-size:30pt;
+  color: #000000;
+}
+
+h2 {
+  font-family:'happy-times', Times, serif ;
   font-size:15pt;
   color: #000000;
 }
