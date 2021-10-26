@@ -70,7 +70,7 @@ function buildPage(){
         let title = document.createElement("h4");
 
         date.textContent = postDatabase[i][0];
-        title.textContent = postDatabase[i][1];
+        title.textContent = postDatabase[i][2];
 
         // add click event listner to link element
         link.addEventListener("click", function(){ 
