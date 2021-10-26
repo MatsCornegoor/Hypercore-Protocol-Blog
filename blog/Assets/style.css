@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'happy-times';
+    src: url("/Assets/fonts/happy-times-NG_bold_master_web.woff") format('woff');
+}
+
+h1 {
+  font-family:'happy-times', Courier, monospace ;
+  font-size:15pt;
+  color: #000000;
+}
