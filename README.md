@@ -1,5 +1,6 @@
 # Hyper-Protocol-Blog
 
+aanpassing
 This is a simple decentralized collaborative markdown blog that is compatible with the Hyper Protocol network.
 We are using the mount function of hyperdrive to create a P2P file sharing system and showdown.js to convert markdown files into blog posts.
 
