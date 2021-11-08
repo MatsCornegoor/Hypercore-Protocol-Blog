@@ -1,5 +1,5 @@
 // people that have the right to publish posts
-let userPool = ['mats/post.txt', 'meeuwis/post.txt', 'mats/post.txt'];
+let userPool = ['mats/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt'];
 
 // init showdown converter
 let conv = new showdown.Converter();
@@ -16,7 +16,7 @@ if(links != null){
 async function fetchLinks(urls){
     
     Promise.all(
-        urls.map(url => fetch(url).then((response) => response.blob()))
+        urls.map(url => fetch(url).then((response) => response.blob()) )
     ).then((data) => {
 
         // loop through fetch pool and add data to post data array
@@ -28,7 +28,7 @@ async function fetchLinks(urls){
                 let lineArray = reader.result.split(/\r\n|\n/);
                 for(let s = 0; s < lineArray.length; s++){
                     // split each line into comma separated array and add to post database
-                    postDatabase.push(lineArray[s].split(','));
+                    postDatabase.push(lineArray[s].split(', '));
                     // if all lines are added to post database, make link list
                     if(i == data.length -1 && s == lineArray.length -1){
                         buildPage();
@@ -50,6 +50,21 @@ async function fetchUrl(url) {
     return response;
 }
 
+// filter function
+function filterCatagory(cat){
+    let el = document.querySelectorAll(".filter");
+
+    for(let i = 0; i < el.length; i++){
+        el[i].style.display = "none";
+    }
+
+    let el2 = document.querySelectorAll("." + cat);
+
+    for(let i = 0; i < el2.length; i++){
+        el2[i].style.display = "block";
+    }
+}
+
 
 function buildPage(){
 
@@ -62,7 +77,28 @@ function buildPage(){
         else return 0;
     });
 
-    console.log(postDatabase);
+
+    let filters = document.getElementById("filters");
+    // array to save previous filters based on database
+    let filterArray = [];
+
+    // Add "all" catagory to filters
+    let filterButton = document.createElement("h4");
+    filterButton.textContent = "all";
+    filterButton.classList.add("selected");
+
+    filterButton.addEventListener("click", function(){ 
+        filterCatagory("filter");
+        // remove selected class from all buttons
+        let selected = document.querySelectorAll(".selected");
+        for(let i = 0; i < selected.length; i++){
+            selected[i].classList.remove("selected");
+        }
+        // add selected class to clicked button
+        filterButton.classList.add("selected");
+    });
+    filters.appendChild(filterButton);
+
 
     for(let i = 0; i < postDatabase.length; i++){
         let link = document.createElement("div")
@@ -70,7 +106,30 @@ function buildPage(){
         let title = document.createElement("h4");
 
         date.textContent = postDatabase[i][0];
+        link.classList.add("filter");
+        link.classList.add(postDatabase[i][1]);
         title.textContent = postDatabase[i][2];
+
+        // if filter button does not already exist, add it to filters
+        if(!filterArray.includes(postDatabase[i][1])){
+            let filterButton = document.createElement("h4");
+            filterButton.textContent = postDatabase[i][1];
+
+            filterButton.addEventListener("click", function(){ 
+                filterCatagory(postDatabase[i][1]);
+                // remove selected class from all buttons
+                let selected = document.querySelectorAll(".selected");
+                for(let i = 0; i < selected.length; i++){
+                    selected[i].classList.remove("selected");
+                }
+                // add selected class to clicked button
+                filterButton.classList.add("selected");
+            });
+
+            filters.appendChild(filterButton);
+            filterArray.push(postDatabase[i][1]);
+        }
+
 
         // add click event listner to link element
         link.addEventListener("click", function(){ 
@@ -98,6 +157,7 @@ function buildPage(){
 
                         document.querySelector(".close").addEventListener("click", function(){ 
                             document.getElementById("contentWrapper").style.display = "none";
+                            links.style.display = "block";
                         });
                     }
 
@@ -107,11 +167,13 @@ function buildPage(){
                 });
             }
             contentWrapper.style.display = "block";
+            links.style.display = "none";
         });
 
         link.appendChild(date);
         link.appendChild(title);
         links.appendChild(link);
+
     }
 
 }

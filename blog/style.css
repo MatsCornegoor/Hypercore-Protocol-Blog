@@ -111,14 +111,33 @@ img {
 }
 
 #links {
+    margin-top: 80px;
     text-align: center;
 }
 
 #links h4 {
     cursor: pointer;
+    display: inline-block;
+}
+
+#links h4:hover {
+    color: gray;
 }
 
 #links div {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#filters {
+    text-align: center;
+}
+
+#filters h4 {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.selected {
+    color: gray;
 }
