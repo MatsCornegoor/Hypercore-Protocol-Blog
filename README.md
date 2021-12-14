@@ -1,11 +1,11 @@
-# Hyper-Protocol-Blog
+# Hypercore-Protocol-Blog
 
-This is a simple decentralized collaborative markdown blog that is compatible with the Hyper Protocol network.
+This is a simple decentralized collaborative markdown blog that is compatible with the Hypercore Protocol network.
 We are using the mount function of hyperdrive to create a P2P file sharing system and showdown.js to convert markdown files into blog posts.
 
 ## View the blog
 
-The easiest way to view the blog is using beaker browser by visiting the following url: hyper://cab491db39be39c0542c611f60b12eabe689efbf2fd0210e280d73507137e0dd/
+The easiest way to view the blog in use is with beaker browser by visiting the following url: hyper://cab491db39be39c0542c611f60b12eabe689efbf2fd0210e280d73507137e0dd/
 
 ## post.txt structure
 
@@ -15,9 +15,9 @@ This file is fetched from the function.js file and used to fetch the blog posts.
 
 The post.txt file uses following structure: Date, Catagory, Title, Link  
 
-22-10-21, Flowers, Flower seeds, user1/test.md  
-23-10-21, Flowers, Flower smells, user2/test.md  
-24-10-21, Tree, Tree leaves, user1/test2.md  
+23-Aug-2019, Category1, First post, username/posts/post1.md
+24-Aug-2019, Category2, Second post, username/posts/post2.md
+26-Aug-2019, Category2, Third post, username/posts/post3.md
 
 
 ## Folder structure
@@ -39,7 +39,7 @@ The post.txt file uses following structure: Date, Catagory, Title, Link
 ## Support the blog
 
 You can support the blog by running a server with Hyper CLI.
-Run the following command to become a seeder: 
+Run the following command to become a seeder of our blog: 
 
 `hyp seed hyper://cab491db39be39c0542c611f60b12eabe689efbf2fd0210e280d73507137e0dd/`
 
