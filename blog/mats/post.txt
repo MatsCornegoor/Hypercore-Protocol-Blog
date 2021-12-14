@@ -1,3 +1,0 @@
-23-Aug-2019, blog, Kittens, mats/test.md
-23-Aug-2018, hey, Cow, mats/test2.md
-23-Aug-2017, test, Chicken, mats/test.md

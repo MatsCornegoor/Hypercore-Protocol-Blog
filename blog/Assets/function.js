@@ -1,5 +1,5 @@
 // people that have the right to publish posts
-let userPool = ['mats/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt', 'meeuwis/post.txt'];
+let userPool = ['username/post.txt',];
 
 // init showdown converter
 let conv = new showdown.Converter();
@@ -103,7 +103,7 @@ function buildPage(){
     for(let i = 0; i < postDatabase.length; i++){
         let link = document.createElement("div")
         let date = document.createElement("h5");
-        let title = document.createElement("h4");
+        let title = document.createElement("h3");
 
         date.textContent = postDatabase[i][0];
         link.classList.add("filter");
@@ -131,8 +131,8 @@ function buildPage(){
         }
 
 
-        // add click event listner to link element
-        link.addEventListener("click", function(){ 
+        // add click event listner to title element
+        title.addEventListener("click", function(){ 
 
             // replace content with html based on file destination
             let content = document.getElementById("content");

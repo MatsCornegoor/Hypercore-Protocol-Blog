@@ -1,39 +1,148 @@
 @font-face {
     font-family: 'happy-times-bold';
-    src: url("fonts/happy-times-NG_bold_master_web.woff") format('woff');
+    src: url("assets/fonts/happy-times-NG_bold_master_web.woff") format('woff');
 }
 @font-face {
     font-family: 'happy-times-regular';
-    src: url("fonts/happy-times-NG_regular_master_web.woff") format('woff');
+    src: url("assets/fonts/happy-times-NG_regular_master_web.woff") format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    background-color: #ededed;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family:'happy-times-bold', Times, serif ;
+    color: #000000;
 }
 
 h1 {
-  font-family:'happy-times-bold', Times, serif ;
-  font-size:30pt;
-  color: #000000;
+    font-size: 50px;
+    padding: 5px 20px 5px 20px;
 }
 
 h2 {
-  font-family:'happy-times-bold', Times, serif ;
-  font-size:20pt;
-  color: #000000;
+    font-size: 40px;
+    padding: 5px 20px 5px 20px;
 }
 
 h3 {
-  font-family:'happy-times-bold', Times, serif ;
-  font-size:13pt;
-  color: #000000;
+    font-size: 30px;
+    padding: 5px 20px 5px 20px;
 }
+
+h4 {
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+h5 {
+    font-size: 15px;
+    padding: 5px 20px 5px 20px;
+}
+
+h6 {
+    font-size: 7px;
+    padding: 5px 20px 5px 20px;
+}
+
 p {
-  font-family:'happy-times-regular', Times, serif ;
-  font-size:13pt;
-  color: #000000;
-}    
-.heading {
-  width: 100%;
-  padding: 5px;
-}   
-hr.solid {
-  border-top: 3px solid #000;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
 }
+
  
+hr.solid {
+    border-top: 3px solid #000;
+}
+
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#content {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 1200px;
+    /* height: 100%; */
+    background-color: #ededed;
+    padding: 20px 100px 20px 100px;
+    margin: 0 auto;
+}
+
+#contentWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #ededed;
+    display: none;
+    height: 100%;
+}
+
+.close {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+#links {
+    margin-top: 80px;
+    text-align: center;
+}
+
+#links h4 {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#links h4:hover {
+    color: gray;
+}
+
+#links div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#filters {
+    text-align: center;
+}
+
+#filters h4 {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.filter h3 {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.selected {
+    color: gray;
+}
